@@ -1,0 +1,127 @@
+/* 
+    Created on : 10/jul/2024, 20:55:04
+    Author     : HENCY BASILIO
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+        rgba(4,9,30,0.7)),
+        url(../image/bg_content.jpg);
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+
+nav a {
+    color: #FFF;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+nav .title {
+    font-family: 'OCR-A BT','Candara','Verdana', 'Times New Roman';  
+}
+
+nav .title span {
+    color: greenyellow;
+    font-weight: bolder;
+}
+
+.info-box {
+    width: 90%;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.info-box h1 {
+    font-family: 'OCR-A BT','Candara','Verdana', 'Times New Roman';
+    font-size: 55px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+
+}
+
+.info-box p {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: lighter;
+    font-family: 'OCR-A BT','Candara','Verdana', 'Times New Roman';
+}
+
+.info-box a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    padding: 5px 40px;
+    border: 1px solid greenyellow;
+    border-radius: 7%;
+    margin: 10px;
+    background-color: transparent;
+    transition: .6s;
+    font-family: 'OCR-A BT','Candara','Verdana', 'Times New Roman';
+}
+
+.info-box a:hover {
+    background-color: greenyellow;
+    color: #000;
+    font-weight: bolder;
+}
+.social-link {
+    width: 90%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.social-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+.social-link a {
+    color: transparent;
+}
+.social-link a:hover {
+    border-bottom: 1px solid greenyellow;
+    transition: .5s;
+}
+.social-link ul li img{
+    width: 40px;
+}
+
+/*RESPONSIVE FUNCTIONS*/
+@media (max-width: 660px) {
+    .info-box h1 {
+        font-size: 35px;
+    }
+    .info-box p{
+        font-size: 13px;
+    }
+    .social-link ul li img{
+        width: 50px;
+    }
+}
